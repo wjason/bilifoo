@@ -15,3 +15,21 @@
 //= require turbolinks
 //= require ckeditor/init
 //= require_tree .
+
+  /*
+   * 首页导航效果
+   */
+  function siteNavEffect() {
+    var siteNav = $('#siteNav');
+    $('#siteNav').find('a').hover(function(){
+      siteNav.find('a.selected').css('border-bottom-color','transparent');
+      // 底部导航条
+      var switchBar = siteNav.find('.switch-bottom');
+      switchBar.show();
+      switchBar.animate({
+        'left': $(this).offset().left,
+        'width': $(this).innerWidth()
+      },150);
+
+    });
+  }

@@ -14,6 +14,7 @@ gem 'rails_admin'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'mina'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 
 
