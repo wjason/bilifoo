@@ -1,0 +1,76 @@
+.container{
+  width: 1024px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.containerTitle{
+  display: inline-block;
+  height: 30px;
+  width: 750px;
+  border-bottom: 1px solid rgba(30,30,30,0.1);
+}
+
+.jewelCard{
+  width: 200px;
+  margin-top: 26px;
+  margin-left: 8px;
+  overflow: hidden;
+  display: inline-block;
+  
+  .jewelName{
+    display: block;
+    font-size: 120%;
+    padding-top: 10px;
+  }
+
+  p{
+    font-size: 60%;
+    margin: 6px auto;
+  }
+
+  .sort{
+    font-size: 60%;
+    color: #ffa6a6;
+    display: inline-block;
+  }
+
+  ul.tags{
+    margin-left: -30px;
+    list-style: none;
+    display: inline-block;
+    font-size: 60%;
+    color: #ffa600;
+
+    li{
+      display: inline;
+      &:before{
+        content: "·";
+        margin: 0 5px;
+      }
+    }
+  }
+
+}
+
+.sidebar{
+  float: right;
+  display: inline-block;
+  width: 260px;
+  border: 1px solid rgba(30,30,30,0.1);
+}
+
+.hot{
+  h3 {
+    border-bottom: 1px solid rgba(30,30,30,0.1);
+    margin: 32px;
+    color: #909090;
+    font-size: 18px;
+  }
+}
+
+.content{
+  display: inline-block;
+  width: 800px;
+}
+
