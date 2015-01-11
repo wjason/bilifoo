@@ -1,9 +1,10 @@
 class JewelsController < ApplicationController
 
   def index
-    @sorts = Sort.all
+    @jewels = Jewel.desc_by_created_params params
   end
 
   def show
   end
+
 end

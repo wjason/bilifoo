@@ -18,6 +18,11 @@ gem 'mina'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 
 
+group :development do
+  gem 'pry'
+end
+
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'

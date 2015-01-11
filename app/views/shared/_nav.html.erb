@@ -1,5 +1,5 @@
 <nav class='nav' id='siteNav'>
-  <% @sorts.each do |sort| %>
-  <a href=""><%= sort.name %></a> 
+  <% Sort.all.each do |sort| %>
+  <a href=<%= sort_path(sort.name)%>><%= sort.name %></a> 
   <% end %>
 </nav>

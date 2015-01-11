@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   resources :jewels
+
+  get 'sorts/:sort' => 'jewels#index', as: :sort
+  get 'tags/:tag' => 'jewels#index', as: :tag
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
