@@ -1,2 +1,19 @@
-<h1>Jewels#show</h1>
-<p>Find me in app/views/jewels/show.html.erb</p>
+
+<div class='fill'></div>
+
+<div class="container">
+  <div class='show-content'>
+   <div class='name'><%= @jewel.name %></div>
+   <div class='sort'><%= @jewel.sort.name %></div>
+   <ul class='tag'>
+    <% @jewel.tags.each do |tag| %>
+      <li><%= tag.name%></li>
+    <% end %>
+   </ul>
+   <div class='content'>
+    <%= raw @jewel.content %>
+   </div>
+  </div>
+  <%= render 'shared/sidebar'%>
+
+</div>

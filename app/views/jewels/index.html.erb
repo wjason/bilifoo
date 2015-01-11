@@ -1,31 +1,20 @@
-<%= render 'shared/ring' %>
+<!-- <%= render 'shared/ring' %> -->
 
 <div class="container">
   <div class="containerTitle"> 首饰 / JEWELS</div>
-  <div class="sidebar">
-    <div class='hot'>
-      <div class='hotTitle'>热门 / HOT</div>
-      <% 6.times do%>
-      <section class='hotCard'>
-        <a href="" class='cover'><img src="http://g.search2.alicdn.com/img/bao/uploaded/i4/i3/TB1x3KlGXXXXXbWXVXXXXXXXXXX_!!0-item_pic.jpg_440x440Q90.jpg_.webp"></a>
-        <a href="" class='jewelName'>小熊戒指</a>
-      </section>
-      <% end %>
-    </div>
-  </div>
+  <%= render 'shared/sidebar'%>
   <div class="content">
-
-    <% 16.times do %>
+    <% @jewels.each do |jewel| %>
     <section class='jewelCard'>
-      <a class='cover' href=""><img alt="80" src="http://g.search.alicdn.com/img/bao/uploaded/i4/i5/T1d71DXgRtXXco6YnX_084322.jpg_440x440Q90.jpg_.webp"></a>
-      <a class='jewelName' href="">小熊项链</a>
-      <a class='sort' href="">项链</a>      
+      <%= link_to(image_tag(jewel.cover_url(:jewel_cover_thumb)), jewel_path(jewel) , class: 'cover') %>
+      <%= link_to(jewel.name, jewel_path(jewel) , class: 'jewelName') %>
+      <%= link_to(jewel.sort.name, sort_path(jewel.sort.name) , class: 'sort') %>
       <ul class='tags'>
-        <li>航过</li>
-        <li>小熊</li>
+        <% jewel.tags.each do |tag| %>
+        <li><%= link_to(tag.name, tag_path(tag.name)) %></li>
+        <% end %>
       </ul>
     </section>
-
     <% end %>
 
        

@@ -56,6 +56,10 @@
         content: "·";
         margin: 0 5px;
       }
+
+      a{
+        color: #ffa600;
+      }
     }
   }
 
@@ -98,5 +102,24 @@
 .content{
   display: inline-block;
   width: 780px;
+}
+
+
+
+.show-content{
+  display: inline-block;
+  width: 700px;
+  margin: 36px;
+
+  .name{}
+  .sort{}
+  .tag{}
+  .number{}
+  .content{}
+}
+
+.fill{
+  width: 1024px;
+  height: 68px;
 }
 
