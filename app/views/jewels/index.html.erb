@@ -1,5 +1,4 @@
 <!-- <%= render 'shared/ring' %> -->
-
 <div class="container">
   <div class="containerTitle"> 首饰 / JEWELS</div>
   <%= render 'shared/sidebar'%>
@@ -8,7 +7,7 @@
     <section class='jewelCard'>
       <%= link_to(image_tag(jewel.cover_url(:jewel_cover_thumb)), jewel_path(jewel) , class: 'cover') %>
       <%= link_to(jewel.name, jewel_path(jewel) , class: 'jewelName') %>
-      <%= link_to(jewel.sort.name, sort_path(jewel.sort.name) , class: 'sort') %>
+      <div class='sort'><%= link_to(jewel.sort.name, sort_path(jewel.sort.name)) %></div>
       <ul class='tags'>
         <% jewel.tags.each do |tag| %>
         <li><%= link_to(tag.name, tag_path(tag.name)) %></li>

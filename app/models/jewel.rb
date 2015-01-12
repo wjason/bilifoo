@@ -16,7 +16,8 @@ class Jewel < ActiveRecord::Base
 
   def self.conv_options params
     option ={}
-    option[params.each_key.first] = { name: params.each_value.first }
+    option['sorts'] = { name: params[:sort] } unless params[:sort].blank?
+    option['tags'] = { name: params[:tag] } unless params[:tag].blank?
     return option
   end
 

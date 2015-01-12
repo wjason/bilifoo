@@ -12,6 +12,7 @@
 
 .jewelCard{
   width: 230px;
+  height: 300px;
   margin-top: 26px;
   margin-left: 18px;
   overflow: hidden;
@@ -19,15 +20,17 @@
   
   .jewelName{
     display: block;
+    height: 33px;
+    overflow: hidden;
     font-size: 120%;
-    padding-top: 10px;
+    padding-top: 12px;
   }
 
   .cover{
     margin:0 auto;
     img{
       width: 220px;
-      height: 200px;
+      height: 220px;
       overflow: hidden;
     }
   }
@@ -41,6 +44,9 @@
     font-size: 60%;
     color: #ffa6a6;
     display: inline-block;
+    a{
+      color: #ffa6a6;
+    }
   }
 
   ul.tags{

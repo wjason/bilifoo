@@ -1,11 +1,7 @@
 class JewelsController < ApplicationController
 
   def index
-    # if params
-    #   # @jewels = Jewel.desc_by_created_params params
-    # else
-      @jewels = Jewel.all
-    # end
+    @jewels = Jewel.desc_by_created_params(params)
   end
 
   def show

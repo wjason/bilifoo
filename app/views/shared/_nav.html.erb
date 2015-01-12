@@ -1,5 +1,6 @@
 <nav class='nav' id='siteNav'>
+  <%= link_to("首页", root_path) %>
   <% Sort.all.each do |sort| %>
-  <a href=<%= sort_path(sort.name)%>><%= sort.name %></a> 
+  <%= link_to(sort.name, sort_path(sort.name)) %> 
   <% end %>
 </nav>
