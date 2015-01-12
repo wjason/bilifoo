@@ -12,7 +12,7 @@ require 'mina/rvm'    # for rvm support. (http://rvm.io)
 
 set :domain, '115.28.57.27'
 set :deploy_to, '/home/bilifoo/bilifoo'
-set :repository, 'git@bitbucket.org:jason_wu/glassx.git'
+set :repository, 'git@github.com:wjason/bilifoo.git'
 set :branch, 'master'
 
 set :app_path, "#{deploy_to}/#{current_path}"
@@ -35,7 +35,7 @@ task :environment do
   # invoke :'rbenv:load'
 
   # For those using RVM, use this to load an RVM version@gemset.
-  invoke :'rvm:use[ruby-2.1.1@default]'
+  invoke :'rvm:use[ruby-2.1.0@rails4.2.0]'
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
