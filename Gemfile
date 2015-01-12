@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rails_admin'
+gem 'mysql2'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
