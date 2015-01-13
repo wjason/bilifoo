@@ -10,8 +10,8 @@ require 'mina/rvm'    # for rvm support. (http://rvm.io)
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :domain, '115.28.57.27'
-set :deploy_to, '/home/bilifoo/bilifoo'
+set :domain, '118.193.128.152'
+set :deploy_to, '/home/deploy/bilifoo'
 set :repository, 'git@github.com:wjason/bilifoo.git'
 set :branch, 'master'
 
