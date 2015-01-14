@@ -10,7 +10,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rails_admin'
-gem 'mysql2'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
@@ -21,6 +20,10 @@ gem 'ckeditor', github: 'galetahub/ckeditor'
 group :development do
   gem 'pry'
   gem 'sqlite3'
+end
+
+group :production do
+  gem 'mysql2'
 end
 
 
