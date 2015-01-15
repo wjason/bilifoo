@@ -13,16 +13,23 @@ gem 'rails_admin'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'mina'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 
 
+
+
+
 group :development do
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
   gem 'pry'
   gem 'sqlite3'
 end
 
 group :production do
+  gem "puma"
   gem 'mysql2'
 end
 
