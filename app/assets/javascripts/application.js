@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require ckeditor/init
-//= require responsiveslides.min
-//= require responsiveslides
 //= require_tree .
 
 
