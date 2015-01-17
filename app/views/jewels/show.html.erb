@@ -4,12 +4,13 @@
 <div class="container">
   <div class='show-content'>
    <div class='name'><%= @jewel.name %></div>
-   <div class='sort'><%= @jewel.sort.name %></div>
+   <%= link_to(@jewel.sort.name, sort_path(@jewel.sort.name), class: 'sort')  %>
    <ul class='tag'>
     <% @jewel.tags.each do |tag| %>
-      <li><%= tag.name%></li>
+      <li><%= link_to(tag.name, tag_path(tag.name) ) %></li>
     <% end %>
    </ul>
+   <div class='number'><%= @jewel.number%></div>
    <div class='content'>
     <%= raw @jewel.content %>
    </div>

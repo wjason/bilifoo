@@ -6,6 +6,7 @@ RailsAdmin.config do |config|
       field :cover
       field :top_cover
       field :sort
+      field :number
       field :tags
       field :statuses
       field :content, :ck_editor
