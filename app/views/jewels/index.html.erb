@@ -3,6 +3,7 @@
   <div class="containerTitle"> 首饰 / JEWELS</div>
   <%= render 'shared/sidebar'%>
   <div class="content">
+
     <% @jewels.each do |jewel| %>
     <section class='jewelCard'>
       <%= link_to(image_tag(jewel.cover_url(:jewel_cover_thumb)), jewel_path(jewel) , class: 'cover') %>
