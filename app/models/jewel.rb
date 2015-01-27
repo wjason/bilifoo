@@ -13,6 +13,10 @@ class Jewel < ActiveRecord::Base
     includes(:sort, :tags).where(conv_options params)
   }
 
+  scope :hot_jewels, ->(){
+    includes(:statuses).where(statuses:{ name:'热门' })
+  }
+
 
 
   def self.conv_options params
